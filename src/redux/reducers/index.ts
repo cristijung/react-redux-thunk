@@ -1,4 +1,4 @@
-import { Action, ActionType } from '../actionTypes/index';
+import { Action, ActionType } from '../actionTypes/index.dt';
 
 export interface Comment {
     postId: number,

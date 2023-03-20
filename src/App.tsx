@@ -10,9 +10,8 @@ function App() {
   const [postId, setPostID] = useState("");
   const { comments, loading, error } = useTypedSelector((state) => state.comments);
 
-  const onSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
+  const onSubmitHandler = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     await dispatch(getComments(postId));
   }
 
@@ -21,8 +20,9 @@ function App() {
         <Header />
       <div>
         <form onSubmit={onSubmitHandler}>
-          <input type={"number"} value={postId} onChange={(e) => setPostID(e.target.value)} />\
-          <button type="submit"> submit </button>
+          <input type={"number"} value={postId} onChange={(e) => setPostID(e.target.value)} /> 
+          <button type="submit" className='btn'> Enviar </button>
+          
         </form>
       </div>
 

@@ -3,9 +3,11 @@
   --branco: #fff;
   --preto: #000;
   --cinza: #ccc;
-  --topo: #233b04;
-  --topoFonte: #8BED0E;
+  --topo: 	#ADD8E6;
+  --topoFonte: #6A5ACD;
   --fonte: 'Montserrat', sans-serif;
+  --corBtn: #191970; 
+  --corBtnHover: #483D8B;
  
 }
 
@@ -13,4 +15,17 @@ body {
   margin: 0px;
   font-family: var(--fonte);
   font-size: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 4px;    
+}
+
+.btn:hover {
+  background-color: var(--corBtnHover);
 }
