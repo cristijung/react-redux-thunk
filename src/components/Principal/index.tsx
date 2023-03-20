@@ -17,8 +17,10 @@ export function Principal(){
   return(
         <article className='main'>
            <> 
-            <form onSubmit={onSubmitHandler}>
-          <input type={"number"} value={postId} onChange={(e) => setPostID(e.target.value)} /> 
+           <h2>Controlando Posts via API Jason Placeholder</h2>
+
+          <form onSubmit={onSubmitHandler}>
+          <input type={"number"} className='form' value={postId} onChange={(e) => setPostID(e.target.value)} /> 
           <button type="submit" className='btn'> Enviar </button>
           
         </form>
@@ -31,7 +33,7 @@ export function Principal(){
           <ul>
             {
               comments.map((comment) => {
-                return(<li key={comment.id}>{comment.body}</li>)
+                return(<li className='form' key={comment.id}>{comment.body}</li>)
               })
             }
           </ul>

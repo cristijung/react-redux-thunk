@@ -31,5 +31,15 @@ body {
 }
 
 .form {
-  
+    padding: 0.2em;
+    width: 300px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post {
+  width: 95%;
 }
