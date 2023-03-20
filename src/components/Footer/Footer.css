@@ -1,0 +1,11 @@
+.footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 200px;
+    background-color: var(--topo);
+    color: var(--branco);
+}
+

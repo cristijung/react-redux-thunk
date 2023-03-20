@@ -1,0 +1,16 @@
+
+:root {  
+  --branco: #fff;
+  --preto: #000;
+  --cinza: #ccc;
+  --topo: #233b04;
+  --topoFonte: #8BED0E;
+  --fonte: 'Montserrat', sans-serif;
+ 
+}
+
+body {
+  margin: 0px;
+  font-family: var(--fonte);
+  font-size: 1rem;
+}
