@@ -13,7 +13,6 @@ export function Principal(){
     e.preventDefault();
     await dispatch(getComments(postId));
   }
-
   return(
         <article className='main'>
            <> 
@@ -23,8 +22,7 @@ export function Principal(){
           <input type={"number"} className='form' value={postId} onChange={(e) => setPostID(e.target.value)} /> 
           <button type="submit" className='btn'> Enviar </button>
           
-        </form>
-      
+        </form>   
 
       {
         loading ? (
@@ -44,3 +42,4 @@ export function Principal(){
     );
 
 }
+

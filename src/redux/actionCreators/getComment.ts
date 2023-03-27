@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Dispatch } from 'redux';
-import { ActionType, Action } from '../actionTypes/index.dt';
+import { ActionType, Action } from '../actionTypes';
 
 export const getComments = (postId: string) => {
     return async (dispatch: Dispatch<Action>) => {
